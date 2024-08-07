@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Fun Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Interactive Fun Site!</h1>
+    <div class="interactive-area">
+      <button class="btn" onclick="changeColor()">Change Background Color</button>
+      <button class="btn" onclick="playSound()">Play Sound</button>
+      <button class="btn" onclick="showMessage()">Show Message</button>
+    </div>
+    <div id="message-container" class="hidden">
+      <p id="message">Hello, this is an interactive message!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

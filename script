@@ -1,0 +1,22 @@
+function changeColor() {
+  document.body.style.backgroundColor = getRandomColor();
+}
+
+function playSound() {
+  const audio = new Audio('sound.mp3');
+  audio.play();
+}
+
+function showMessage() {
+  const messageContainer = document.getElementById('message-container');
+  messageContainer.classList.remove('hidden');
+}
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
